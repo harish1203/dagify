@@ -27,7 +27,7 @@ def clean_converter_type(converter_type):
     Returns:
         str: The cleaned converter type.
     """
-    return re.sub("[^A-Za-z0-9]+", "", converter_type).upper()
+    return re.sub("[^A-Za-z0-9]+", "", converter_type).lower()
 
 
 def file_exists(file_path):
